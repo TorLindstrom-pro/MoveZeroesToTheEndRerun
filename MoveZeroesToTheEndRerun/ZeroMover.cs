@@ -4,6 +4,6 @@ public class ZeroMover
 {
 	public static int[] MoveZeroes(int[] ints)
 	{
-		return [0];
+		return ints;
 	}
 }
