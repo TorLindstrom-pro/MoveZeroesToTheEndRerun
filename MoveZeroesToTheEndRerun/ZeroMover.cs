@@ -1,4 +1,6 @@
-﻿namespace MoveZeroesToTheEndRerun;
+﻿using System.Linq;
+
+namespace MoveZeroesToTheEndRerun;
 
 public class ZeroMover
 {
