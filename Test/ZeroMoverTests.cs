@@ -27,4 +27,16 @@ public class ZeroMoverTests
         // assert
         result.Should().Equal(ints);
     }
+
+    [Theory(DisplayName = "Zeroes are moved to the end")]
+    [InlineData(new[] {0,0,1}, new[] {1,0,0})]
+    [InlineData(new[] {0,1,0,12,3}, new[] {1,12,3,0,0})]
+    public void Zeroes_ShouldBeMovedToTheEnd(int[] ints, int[] expectedInts)
+    {
+        // act
+        var result = ZeroMover.MoveZeroes(ints);
+        
+        // assert
+        result.Should().Equal(expectedInts);
+    }
 }
