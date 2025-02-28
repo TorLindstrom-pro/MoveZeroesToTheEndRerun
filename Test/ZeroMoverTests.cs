@@ -25,6 +25,6 @@ public class ZeroMoverTests
         var result = ZeroMover.MoveZeroes(ints);
         
         // assert
-        result.Should().BeEquivalentTo(ints);
+        result.Should().Equal(ints);
     }
 }
